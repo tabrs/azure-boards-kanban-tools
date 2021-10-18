@@ -20,3 +20,7 @@ css/
 npm-debug.log
 debug.log
 ~$*.pptx
+
+.vscode/*
+.vscode/tasks.json
+.gitignore
