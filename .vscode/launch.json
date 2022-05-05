@@ -2,8 +2,8 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Launch Chrome against localhost, with sourcemaps",
-            "type": "chrome",
+            "name": "Launch Microsoft Edge against localhost, with sourcemaps",
+            "type": "pwa-msedge",
             "request": "launch",
             "url": "https://localhost:9090",
             "sourceMaps": true,
@@ -13,8 +13,8 @@
             "userDataDir": "${workspaceRoot}/out/chrome"
         },
         {
-            "name": "Attach to Chrome, with sourcemaps",
-            "type": "chrome",
+            "name": "Attach to Microsoft Edge, with sourcemaps",
+            "type": "pwa-msedge",
             "request": "attach",
             "port": 9222,
             "sourceMaps": true,
