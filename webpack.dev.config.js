@@ -19,7 +19,7 @@ module.exports = merge(CommonConfig, {
     },
   },
   stats: {
-    logging: 'verbose',
+    // logging: 'verbose',
     warnings: false,
   }
 });

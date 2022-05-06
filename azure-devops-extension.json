@@ -1,15 +1,15 @@
 {
   "manifestVersion": 1,
-  "id": "kanban-board-tools",
-  "version": "1.1.131",
-  "name": "Azure Boards Kanban Tools",
+  "id": "abrs-kanban-board",
+  "version": "0.0.1",
+  "name": "ABRS Kanban Board",
   "scopes": [
     "vso.profile",
     "vso.work",
     "vso.work_write"
   ],
   "description": "A set of tools for interacting with and enhancing the Kanban board.",
-  "publisher": "alm-devops-rangers",
+  "publisher": "ABRS",
   "public": false,
   "icons": {
     "default": "marketplace/logo.png"
@@ -39,7 +39,7 @@
   },
   "repository": {
     "type": "git",
-    "uri": "https://github.com/ALM-Rangers/azure-boards-kanban-tools"
+    "uri": "https://github.com/tabrs/azure-boards-kanban-tools"
   },
   "branding": {
     "color": "rgb(51,65,133)",
