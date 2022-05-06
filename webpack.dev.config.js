@@ -1,6 +1,8 @@
 const { merge } = require("webpack-merge");
 const CommonConfig = require("./webpack.base.config");
+const path = require('path');
 
+// Configuration
 module.exports = merge(CommonConfig, {
   mode: 'development',
   output: {
@@ -9,10 +11,15 @@ module.exports = merge(CommonConfig, {
   devServer: {
     https: true,
     port: 9090,
-    open: true
+    open: true,
+    // contentBase: path.resolve(__dirname, '../dist'),
+    static: {
+      // directory: path.join(__dirname, 'dist'),
+      directory: path.resolve(__dirname, 'dist'),
+    },
   },
   stats: {
-    warnings: false
+    logging: 'verbose',
+    warnings: false,
   }
-
 });

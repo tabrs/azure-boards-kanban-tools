@@ -1,3 +1,4 @@
 module.exports = function(env) {
-  return require(`./webpack.${env}.config`);
+  var envid = env.dev ? "dev" : "prod";
+  return require(`./webpack.${envid}.config`);
 };

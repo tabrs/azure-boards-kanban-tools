@@ -2,6 +2,7 @@ const path = require("path");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
 
 module.exports = {
+  devtool: 'inline-source-map',
   target: "web",
   entry: {
     kanban: "./src/Kanban.ts",
@@ -9,10 +10,9 @@ module.exports = {
   },
   output: {
     filename: "src/[name].js",
-    path:  path.resolve(__dirname, 'dist'),
+    path: path.resolve(__dirname, 'dist'),
     publicPath: "../dist",
   },
-  devtool: "inline-source-map",
   resolve: {
     extensions: [".ts", ".tsx", ".js"],
     alias: {
@@ -28,10 +28,10 @@ module.exports = {
         loader: "tslint-loader",
         enforce: "pre",
         options: {
-            emitErrors: true,
-            failOnHint: true
+          emitErrors: true,
+          failOnHint: true
         }
-    },
+      },
       {
         test: /\.tsx?$/,
         use: "ts-loader"
